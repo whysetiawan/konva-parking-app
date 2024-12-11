@@ -29,9 +29,10 @@ const MainPage: React.FC = () => {
             src="src/assets/demo-parking-floormap.jpg"
             className="w-full h-full md:rotate-0 md:w-main-content"
           >
-            {parkingLots.map((lot) => {
+            {parkingLots.map((lot, index) => {
               return (
                 <ParkingLotProxy
+                  key={index}
                   parkingLotAtom={lot}
                   onClick={() => {
                     setSelectedLotAtom(lot);

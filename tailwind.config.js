@@ -1,3 +1,5 @@
+import twanimate from "tailwindcss-animate";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["selector"],
@@ -15,5 +17,5 @@ export default {
       colors: {},
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [twanimate],
 };
