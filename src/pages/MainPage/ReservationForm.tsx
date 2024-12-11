@@ -4,6 +4,17 @@ import { Card } from "../../components/ui/card";
 import { Input } from "../../components/ui/input";
 import { IParkingLot } from "../../store/parking";
 import { PrimitiveAtom } from "jotai";
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogTitle,
+  DialogClose,
+  DialogFooter,
+  DialogDescription,
+} from "../../components/ui/dialog";
+import { DialogHeader } from "../../components/ui/dialog";
+import { useRef } from "react";
 
 interface ReservationFormProps {
   selectedLotAtom: PrimitiveAtom<IParkingLot>;
@@ -12,6 +23,7 @@ interface ReservationFormProps {
 const ReservationForm: React.FC<ReservationFormProps> = ({
   selectedLotAtom,
 }) => {
+  const formRef = useRef<HTMLFormElement>(null);
   const [parkingLot, setParkingLot] = useAtom(selectedLotAtom);
 
   const _onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -32,12 +44,39 @@ const ReservationForm: React.FC<ReservationFormProps> = ({
   };
 
   return (
-    <Card className="hidden sm:block p-4 space-y-4">
+    <Card className="block p-4 space-y-4">
       <h2 className="font-bold">Reserve Lot #{parkingLot.id}</h2>
-      <form onSubmit={_onSubmit} className="space-y-3">
+      <form ref={formRef} onSubmit={_onSubmit} className="space-y-3">
         <Input name="vehicle-no" placeholder="Vehicle No." />
         <Input name="name" placeholder="Full Name" />
-        <Button>Confirm</Button>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button>Save</Button>
+          </DialogTrigger>
+          <DialogContent>
+            <DialogHeader>
+              <DialogClose></DialogClose>
+              <DialogTitle>Reserving Lot #{parkingLot.id}</DialogTitle>
+              <DialogDescription>
+                Are you sure want to reserve?
+              </DialogDescription>
+              <DialogFooter>
+                <Button
+                  type="submit"
+                  onClick={() => {
+                    formRef.current?.dispatchEvent(
+                      new Event("submit", {
+                        bubbles: true,
+                      })
+                    );
+                  }}
+                >
+                  Confirm
+                </Button>
+              </DialogFooter>
+            </DialogHeader>
+          </DialogContent>
+        </Dialog>
       </form>
     </Card>
   );

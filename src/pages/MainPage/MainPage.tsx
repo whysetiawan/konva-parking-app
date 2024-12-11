@@ -8,51 +8,69 @@ import { useRef, useState } from "react";
 import ReservationInfo from "./ReservationInfo";
 import ReservationForm from "./ReservationForm";
 import { PrimitiveAtom } from "jotai";
+import { AspectRatio } from "../../components/ui/aspect-ratio";
+import EndReservationDialog from "./EndReservationDialog";
 
 const MainPage: React.FC = () => {
-  const [selectedLotId, setSelectedLotId] =
+  const [selectedLotAtom, setSelectedLotAtom] =
     useState<PrimitiveAtom<IParkingLot> | null>(null);
   const [parkingLots] = useAtom(parkingLotAtom);
   const [isReserveOpen, setIsReserveOpen] = useState(false);
+  const [isEndReserveOpen, setIsEndReserveOpen] = useState(false);
   const parkingSpaceRef = useRef<ParkingSpaceRef>(null);
 
-  const selectedLot = parkingLots.find((lot) => lot === selectedLotId);
+  const selectedLot = parkingLots.find((lot) => lot === selectedLotAtom);
 
   return (
-    <div className="flex flex-row items-start py-4 px-8 gap-x-2 h-screen">
-      <ParkingSpace
-        ref={parkingSpaceRef}
-        src="src/assets/demo-parking-floormap.jpg"
-        className="w-full h-auto sm:h-full sm:rotate-0 sm:w-main-content"
-      >
-        {parkingLots.map((lot) => {
-          return (
-            <ParkingLotProxy
-              parkingLotAtom={lot}
-              onClick={() => {
-                setSelectedLotId(lot);
-              }}
+    <>
+      <div className="flex flex-col md:flex-row items-start py-4 px-8 gap-2 h-screen">
+        <div className="w-full md:w-main-content aspect-[2.2/1]">
+          <ParkingSpace
+            ref={parkingSpaceRef}
+            src="src/assets/demo-parking-floormap.jpg"
+            className="w-full h-full md:rotate-0 md:w-main-content"
+          >
+            {parkingLots.map((lot) => {
+              return (
+                <ParkingLotProxy
+                  parkingLotAtom={lot}
+                  onClick={() => {
+                    setSelectedLotAtom(lot);
+                  }}
+                />
+              );
+            })}
+            {selectedLot && (
+              <ReservationInfo
+                parkingLot={selectedLot}
+                onClose={() => {
+                  setSelectedLotAtom(null);
+                  setIsReserveOpen(false);
+                }}
+                onReserve={() => setIsReserveOpen(true)}
+                onEndReserve={() => {
+                  setIsEndReserveOpen(true);
+                  setIsReserveOpen(false);
+                }}
+              />
+            )}
+          </ParkingSpace>
+
+          {selectedLotAtom && (
+            <EndReservationDialog
+              selectedLotAtom={selectedLotAtom}
+              open={isEndReserveOpen}
+              onOpenChange={setIsEndReserveOpen}
             />
-          );
-        })}
-        {selectedLot && (
-          <ReservationInfo
-            parkingLot={selectedLot}
-            onClose={() => {
-              setSelectedLotId(null);
-              setIsReserveOpen(false);
-            }}
-            onReserve={() => setIsReserveOpen(true)}
-            onEndReserve={() => setIsReserveOpen(false)}
-          />
-        )}
-      </ParkingSpace>
-      <div className="w-0 sm:w-[400px]">
-        {isReserveOpen && selectedLotId && (
-          <ReservationForm selectedLotAtom={selectedLotId} />
-        )}
+          )}
+        </div>
+        <div className="w-full md:w-[400px]">
+          {isReserveOpen && selectedLotAtom && (
+            <ReservationForm selectedLotAtom={selectedLotAtom} />
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
@@ -61,7 +79,7 @@ const ParkingLotProxy: React.FC<{
   onClick: () => void;
 }> = (props) => {
   const [lot] = useAtom(props.parkingLotAtom);
-  console.log("proxy re-render", lot);
+
   return (
     <ParkingLot
       available={!!lot.vehicle}

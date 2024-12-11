@@ -10,7 +10,7 @@ export type Vehicle = {
 
 export type IParkingLot = {
   id: number;
-  available: boolean;
+
   coorX: number;
   coorY: number;
   width: number;
@@ -23,7 +23,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 1,
     coorX: 630,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -31,7 +31,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 2,
     coorX: 669,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -39,7 +39,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 3,
     coorX: 706,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -47,7 +47,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 4,
     coorX: 746,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -55,7 +55,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 5,
     coorX: 784,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -63,7 +63,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 6,
     coorX: 822,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -71,7 +71,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 7,
     coorX: 861,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -79,7 +79,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 8,
     coorX: 900,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -87,7 +87,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 9,
     coorX: 938,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -95,7 +95,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 10,
     coorX: 977,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -103,7 +103,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 11,
     coorX: 1015,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -111,7 +111,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 12,
     coorX: 1054,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -119,7 +119,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 13,
     coorX: 1092,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -127,7 +127,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 14,
     coorX: 1130,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -135,7 +135,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 15,
     coorX: 1169,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -143,7 +143,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 16,
     coorX: 1208,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -151,7 +151,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 17,
     coorX: 1246,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -159,7 +159,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 18,
     coorX: 1285,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -167,13 +167,13 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 19,
     coorX: 1323,
     coorY: 62,
-    available: true,
+
     width: 30,
     height: 65,
   },
   {
     id: 20,
-    available: true,
+
     coorX: 515,
     coorY: 238,
     width: 30,
@@ -181,7 +181,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 21,
-    available: true,
+
     coorX: 592.362825437341,
     coorY: 238,
     width: 30,
@@ -189,7 +189,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 22,
-    available: true,
+
     coorX: 552,
     coorY: 238,
     width: 30,
@@ -197,7 +197,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 23,
-    available: true,
+
     coorX: 630,
     coorY: 238,
     width: 30,
@@ -205,7 +205,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 24,
-    available: true,
+
     coorX: 668,
     coorY: 238,
     width: 30,
@@ -213,7 +213,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 25,
-    available: true,
+
     coorX: 706.468590776211,
     coorY: 238,
     width: 30,
@@ -221,7 +221,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 26,
-    available: true,
+
     coorX: 746.08810441268,
     coorY: 238,
     width: 30,
@@ -229,7 +229,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 27,
-    available: true,
+
     coorX: 784,
     coorY: 238,
     width: 30,
@@ -237,7 +237,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 28,
-    available: true,
+
     coorX: 823,
     coorY: 238,
     width: 30,
@@ -245,7 +245,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 29,
-    available: true,
+
     coorX: 862,
     coorY: 238,
     width: 30,
@@ -253,7 +253,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 30,
-    available: true,
+
     coorX: 900,
     coorY: 238,
     width: 30,
@@ -261,7 +261,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 31,
-    available: true,
+
     coorX: 938,
     coorY: 238,
     width: 30,
@@ -269,7 +269,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 32,
-    available: true,
+
     coorX: 977,
     coorY: 238,
     width: 30,
@@ -277,7 +277,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 33,
-    available: true,
+
     coorX: 1014.7418716423614,
     coorY: 238,
     width: 30,
@@ -285,7 +285,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 34,
-    available: true,
+
     coorX: 1054,
     coorY: 238,
     width: 30,
@@ -293,7 +293,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 35,
-    available: true,
+
     coorX: 1092,
     coorY: 238,
     width: 30,
@@ -301,7 +301,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 36,
-    available: true,
+
     coorX: 1131,
     coorY: 238,
     width: 30,
@@ -309,7 +309,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 37,
-    available: true,
+
     coorX: 1169,
     coorY: 238,
     width: 30,
@@ -317,7 +317,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 38,
-    available: true,
+
     coorX: 359.99849518207503,
     coorY: 318,
     width: 30,
@@ -325,7 +325,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 39,
-    available: true,
+
     coorX: 399,
     coorY: 318,
     width: 30,
@@ -333,7 +333,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 40,
-    available: true,
+
     coorX: 437.07535595601,
     coorY: 318,
     width: 30,
@@ -341,7 +341,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 41,
-    available: true,
+
     coorX: 475.558397989414,
     coorY: 318,
     width: 30,
@@ -349,7 +349,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 42,
-    available: true,
+
     coorX: 514,
     coorY: 318,
     width: 30,
@@ -357,7 +357,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 43,
-    available: true,
+
     coorX: 552,
     coorY: 318,
     width: 30,
@@ -365,7 +365,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 44,
-    available: true,
+
     coorX: 592,
     coorY: 318,
     width: 30,
@@ -373,7 +373,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 45,
-    available: true,
+
     coorX: 630,
     coorY: 318,
     width: 30,
@@ -381,7 +381,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 46,
-    available: true,
+
     coorX: 668,
     coorY: 318,
     width: 30,
@@ -389,7 +389,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 47,
-    available: true,
+
     coorX: 706.468590776211,
     coorY: 318,
     width: 30,
@@ -397,7 +397,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 48,
-    available: true,
+
     coorX: 746,
     coorY: 318,
     width: 30,
@@ -405,7 +405,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 49,
-    available: true,
+
     coorX: 784,
     coorY: 318,
     width: 30,
@@ -413,7 +413,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 50,
-    available: true,
+
     coorX: 823,
     coorY: 318,
     width: 30,
@@ -421,7 +421,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 51,
-    available: true,
+
     coorX: 861,
     coorY: 318,
     width: 30,
@@ -429,7 +429,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 52,
-    available: true,
+
     coorX: 746,
     coorY: 496,
     width: 30,
@@ -437,7 +437,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 53,
-    available: true,
+
     coorX: 784,
     coorY: 496,
     width: 30,
@@ -445,7 +445,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 54,
-    available: true,
+
     coorX: 822,
     coorY: 496,
     width: 30,
@@ -453,7 +453,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 55,
-    available: true,
+
     coorX: 861,
     coorY: 496,
     width: 30,
@@ -461,7 +461,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 56,
-    available: true,
+
     coorX: 900,
     coorY: 496,
     width: 30,
@@ -469,7 +469,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 57,
-    available: true,
+
     coorX: 939,
     coorY: 496,
     width: 30,
@@ -477,7 +477,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 58,
-    available: true,
+
     coorX: 707,
     coorY: 496,
     width: 30,
@@ -485,7 +485,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 59,
-    available: true,
+
     coorX: 668,
     coorY: 496,
     width: 30,
@@ -493,7 +493,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 60,
-    available: true,
+
     coorX: 630,
     coorY: 496,
     width: 30,
@@ -501,7 +501,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 61,
-    available: true,
+
     coorX: 592,
     coorY: 496,
     width: 30,
@@ -509,7 +509,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 62,
-    available: true,
+
     coorX: 552,
     coorY: 496,
     width: 30,
@@ -517,7 +517,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 63,
-    available: true,
+
     coorX: 515,
     coorY: 496,
     width: 30,
@@ -525,7 +525,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 64,
-    available: true,
+
     coorX: 476,
     coorY: 496,
     width: 30,
@@ -533,7 +533,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 65,
-    available: true,
+
     coorX: 438,
     coorY: 496,
     width: 30,
@@ -543,7 +543,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 66,
     coorX: 438,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -551,7 +551,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 67,
     coorX: 476,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -559,7 +559,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 68,
     coorX: 514,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -567,7 +567,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 69,
     coorX: 552,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -575,7 +575,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 70,
     coorX: 593,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -583,7 +583,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 71,
     coorX: 630,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -591,7 +591,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 72,
     coorX: 669,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -599,7 +599,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 73,
     coorX: 707,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -607,7 +607,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 74,
     coorX: 745,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -615,7 +615,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 75,
     coorX: 784,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -623,7 +623,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 76,
     coorX: 823,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -631,7 +631,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 77,
     coorX: 861,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -639,7 +639,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 78,
     coorX: 899,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -647,7 +647,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 79,
     coorX: 938,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -655,7 +655,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 80,
     coorX: 977,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -663,7 +663,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 81,
     coorX: 1015,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -671,7 +671,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 82,
     coorX: 1054,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -679,7 +679,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 83,
     coorX: 1092,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -687,7 +687,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 84,
     coorX: 1130,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -695,7 +695,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 85,
     coorX: 1169,
     coorY: 576,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -703,7 +703,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 86,
     coorX: 283,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -711,7 +711,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 87,
     coorX: 321,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -719,7 +719,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 88,
     coorX: 360,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -727,7 +727,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 89,
     coorX: 399,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -735,7 +735,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 90,
     coorX: 437,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -743,7 +743,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 91,
     coorX: 475,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -751,7 +751,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 92,
     coorX: 514,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -759,7 +759,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 93,
     coorX: 553,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -767,7 +767,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 94,
     coorX: 591,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -775,7 +775,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 95,
     coorX: 629,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -783,7 +783,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 96,
     coorX: 668,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -791,7 +791,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 97,
     coorX: 706,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -799,7 +799,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 98,
     coorX: 746,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -807,7 +807,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 99,
     coorX: 783,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -815,7 +815,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 100,
     coorX: 822,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -823,7 +823,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 101,
     coorX: 861,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -831,7 +831,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 102,
     coorX: 900,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -839,7 +839,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 103,
     coorX: 938,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -847,7 +847,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 104,
     coorX: 976,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -855,7 +855,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 105,
     coorX: 1015,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -863,7 +863,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 106,
     coorX: 1054,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -871,7 +871,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 107,
     coorX: 1092,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -879,7 +879,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 108,
     coorX: 1131,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -887,7 +887,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 109,
     coorX: 1169,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -895,7 +895,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 110,
     coorX: 1208,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -903,7 +903,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 111,
     coorX: 1246,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -911,7 +911,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 112,
     coorX: 1285,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
@@ -919,13 +919,13 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 113,
     coorX: 1324,
     coorY: 754,
-    available: true,
+
     width: 30,
     height: 65,
   },
   {
     id: 114,
-    available: true,
+
     coorX: 210,
     coorY: 527.909841968122,
     width: 65,
@@ -933,7 +933,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 115,
-    available: true,
+
     coorX: 210,
     coorY: 594,
     width: 65,
@@ -941,7 +941,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 116,
-    available: true,
+
     coorX: 210,
     coorY: 633,
     width: 65,
@@ -949,7 +949,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 117,
-    available: true,
+
     coorX: 210,
     coorY: 672,
     width: 65,
@@ -957,7 +957,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
   },
   {
     id: 118,
-    available: true,
+
     coorX: 210,
     coorY: 710,
     width: 65,
@@ -967,7 +967,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 119,
     coorX: 1365,
     coorY: 156,
-    available: true,
+
     width: 65,
     height: 30,
   },
@@ -975,7 +975,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 120,
     coorX: 1365,
     coorY: 194,
-    available: true,
+
     width: 65,
     height: 30,
   },
@@ -983,7 +983,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 121,
     coorX: 1365,
     coorY: 232,
-    available: true,
+
     width: 65,
     height: 30,
   },
@@ -991,7 +991,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 122,
     coorX: 1365,
     coorY: 271,
-    available: true,
+
     width: 65,
     height: 30,
   },
@@ -999,7 +999,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 123,
     coorX: 1365,
     coorY: 328,
-    available: true,
+
     width: 65,
     height: 30,
   },
@@ -1007,7 +1007,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 124,
     coorX: 1365,
     coorY: 366,
-    available: true,
+
     width: 65,
     height: 30,
   },
@@ -1015,7 +1015,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 125,
     coorX: 1365,
     coorY: 405,
-    available: true,
+
     width: 65,
     height: 30,
   },
@@ -1023,7 +1023,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 126,
     coorX: 1365,
     coorY: 444,
-    available: true,
+
     width: 65,
     height: 30,
   },
@@ -1031,7 +1031,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 127,
     coorX: 1365,
     coorY: 483,
-    available: true,
+
     width: 65,
     height: 30,
   },
@@ -1039,7 +1039,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 128,
     coorX: 1365,
     coorY: 521,
-    available: true,
+
     width: 65,
     height: 30,
   },
@@ -1047,7 +1047,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 129,
     coorX: 1365,
     coorY: 578,
-    available: true,
+
     width: 65,
     height: 30,
   },
@@ -1055,7 +1055,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 130,
     coorX: 1365,
     coorY: 617,
-    available: true,
+
     width: 65,
     height: 30,
   },
@@ -1063,7 +1063,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 131,
     coorX: 1365,
     coorY: 655,
-    available: true,
+
     width: 65,
     height: 30,
   },
@@ -1071,7 +1071,7 @@ export const DEFAULT_PARKING_LOTS: Array<IParkingLot> = [
     id: 132,
     coorX: 1365,
     coorY: 694,
-    available: true,
+
     width: 65,
     height: 30,
   },

@@ -3,11 +3,11 @@ import { Button } from "../../components/ui/button";
 import { Card } from "../../components/ui/card";
 import { IParkingLot, Vehicle } from "../../store/parking";
 import { Html } from "react-konva-utils";
-import { Atom, useAtom } from "jotai";
+import { PrimitiveAtom, useAtom } from "jotai";
 import { useRef } from "react";
 
 interface ReservationInfoProps {
-  parkingLot: Atom<IParkingLot>;
+  parkingLot: PrimitiveAtom<IParkingLot>;
   onClose: () => void;
   onReserve: () => void;
   onEndReserve: () => void;
@@ -20,7 +20,7 @@ const ReservationInfo: React.FC<ReservationInfoProps> = ({
   onEndReserve,
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
-  const [selectedLot, setSelectedLot] = useAtom(parkingLot);
+  const [selectedLot] = useAtom(parkingLot);
 
   const vehicleInfo = selectedLot.vehicle;
 
@@ -42,7 +42,7 @@ const ReservationInfo: React.FC<ReservationInfoProps> = ({
           {!isAvailable && (
             <>
               <VehicleInfo {...vehicleInfo} />
-              <Button onClick={onEndReserve}>End</Button>
+              <Button onClick={onEndReserve}>End Reserve</Button>
             </>
           )}
 
