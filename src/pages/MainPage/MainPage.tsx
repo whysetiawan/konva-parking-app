@@ -8,7 +8,6 @@ import { useRef, useState } from "react";
 import ReservationInfo from "./ReservationInfo";
 import ReservationForm from "./ReservationForm";
 import { PrimitiveAtom } from "jotai";
-import { AspectRatio } from "../../components/ui/aspect-ratio";
 import EndReservationDialog from "./EndReservationDialog";
 
 const MainPage: React.FC = () => {

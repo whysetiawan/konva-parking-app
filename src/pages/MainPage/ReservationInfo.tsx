@@ -54,13 +54,7 @@ const ReservationInfo: React.FC<ReservationInfoProps> = ({
   );
 };
 
-const VehicleInfo: React.FC<Vehicle> = ({
-  name,
-  no,
-  startTime,
-  type,
-  endTime,
-}) => {
+const VehicleInfo: React.FC<Vehicle> = ({ name, no, type }) => {
   return (
     <div className="space-y-2">
       <span className="block text-sm">
