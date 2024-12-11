@@ -26,7 +26,7 @@ const MainPage: React.FC = () => {
         <div className="w-full md:w-main-content aspect-[2.2/1]">
           <ParkingSpace
             ref={parkingSpaceRef}
-            src="src/assets/demo-parking-floormap.jpg"
+            src="/demo-parking-floormap.jpg"
             className="w-full h-full md:rotate-0 md:w-main-content"
           >
             {parkingLots.map((lot, index) => {

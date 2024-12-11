@@ -29,7 +29,6 @@ export type ParkingSpaceRef = {
 const ParkingSpace = forwardRef<ParkingSpaceRef, ParkingSpaceProps>(
   ({ src, children, ...props }, parkingSpaceRef) => {
     const [image, status] = useImage(src);
-    console.log("status", status);
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [zoom, setZoom] = useState({ x: 1, y: 1 });
     const stageRef = useRef<StageI | null>(null);
